@@ -1,0 +1,19 @@
+<template name="home">
+  <h1 id="main-title">Entry Level Tech Jobs</h1>
+  <div id="main-button-div">
+	  <button type="button" class="btn btn-primary btn-lg main-buttons">Find Jobs</button>
+	  {{#if currentUser}}
+	  	<button id="post-button" type="button" class="btn btn-success btn-lg main-buttons">Post Jobs</button>
+	  	<div id="create-form"> 
+				{{#if currentUser}}
+					{{> createJob}}
+				{{/if}}
+			</div>
+	  {{/if}}
+  </div>
+  <ul id="jobList">
+	  {{#each jobs}}
+	  	{{> jobItem}}
+	  {{/each}}
+  </ul>
+</template>

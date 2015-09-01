@@ -1,0 +1,66 @@
+#main-title {
+	margin: 0 auto;
+	max-width: 960px;
+	text-align: center;
+}
+
+#main-button-div {
+	max-width: 960px;
+	margin: 0 auto;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.field-label {
+	display: block;
+}
+
+#create-form {
+	display: none;
+}
+
+.main-buttons {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.main-buttons:focus {
+	outline: 0;
+}
+
+#jobList {
+	padding: 0;
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+.delete-job-button {
+	margin-right: 5px;
+	margin-top: 10px;
+	border-radius: 5px;
+	float: right;
+	border: none;
+	background-color: red;
+}
+
+.job-item {
+	background: rgba(150, 150, 150, 0.5);
+	padding: 0 8px 8px 15px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.job-title {
+	float: left;
+	margin-right: 35px;
+	width: 15%;
+}
+
+.job-description {
+	margin-top: 20px;
+	float: left;
+	width: 60%;
+}
