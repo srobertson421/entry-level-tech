@@ -6,7 +6,6 @@ Template.jobItem.helpers({
 	}
 });
 
-
 Template.jobItem.events({
 	"click .delete-job-button": function(e) {
 		e.preventDefault();

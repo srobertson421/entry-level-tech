@@ -1,9 +1,22 @@
 <template name="createJob">
+	<h4>Please post ONLY entry level tech jobs</h4>
 	<form id="create-job" data-parsley-validate>
+
 		<label for="title-input" class="field-label">Job Title</label>
-		<input type="text" id="title-input" name="title-input" placeholder="Enter Job Title" required />
+		<input type="text" class="job-field" id="title-input" name="title-input" placeholder="Enter Job Title" required />
+
+		<label for="company-input" class="field-label">Company</label>
+		<input type="text" class="job-field" id="company-input" name="company-input" placeholder="Enter Company Name" required />
+
+		<label for="loc-input" class="field-label">Location</label>
+		<input type="text" class="job-field" id="loc-input" name="loc-input" placeholder="Enter Job Location" />
+
+		<label for="url-input" class="field-label">Job/Company URL</label>
+		<input type="url" class="job-field" id="url-input" name="url-input" placeholder="Enter Job/Company URL" />
+
 		<label for="desc-input" class="field-label">Job Description</label>
 		<textarea type="textarea" rows="4" cols="50" id="desc-input" name="desc-input" placeholder="Enter Job Description" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10" data-parsley-minlength-message = "Please use at least 50 characters" required></textarea> 
+
 	</form>
 	<button id="create-job-submit" type="button">Submit</button>
 </template>

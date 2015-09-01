@@ -8,6 +8,21 @@ Schemas.Jobs = new SimpleSchema({
 		label: "Title",
 		max: 200
 	},
+	company: {
+		type: String,
+		label: "Company",
+		max: 200
+	},
+	location: {
+		type: String,
+		label: "Location",
+		max: 200
+	},
+	url: {
+		type: String,
+		label: "Url",
+		max: 200
+	},
 	description: {
 		type: String,
 		label: "Description",

@@ -10,6 +10,9 @@ Meteor.methods({
 
 		Jobs.insert({
       title: job.title,
+      company: job.company,
+      location: job.location,
+      url: job.url,
       description: job.description,
       createdAt: new Date(),
       owner: Meteor.userId()

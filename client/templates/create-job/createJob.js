@@ -12,9 +12,15 @@ Template.createJob.events({
 
 		var titleVal = $('#title-input').val();
 		var descVal = $('#desc-input').val();
+		var compVal = $('#company-input').val();
+		var locVal = $('#loc-input').val();
+		var urlVal = $('#url-input').val();
 
 		var newJob = {
 			title: titleVal,
+			company: compVal,
+			location: locVal,
+			url: urlVal,
 			description: descVal
 		}
 
