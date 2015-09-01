@@ -1,9 +1,9 @@
 <template name="createJob">
-	<form id="create-job">
+	<form id="create-job" data-parsley-validate>
 		<label for="title-input" class="field-label">Job Title</label>
-		<input type="text" id="title-input" name="title-input" placeholder="Enter Job Title" />
+		<input type="text" id="title-input" name="title-input" placeholder="Enter Job Title" required />
 		<label for="desc-input" class="field-label">Job Description</label>
-		<textarea type="textarea" rows="4" cols="50" id="desc-input" name="desc-input" placeholder="Enter Job Description"></textarea> 
+		<textarea type="textarea" rows="4" cols="50" id="desc-input" name="desc-input" placeholder="Enter Job Description" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10" data-parsley-minlength-message = "Please use at least 50 characters" required></textarea> 
 	</form>
 	<button id="create-job-submit" type="button">Submit</button>
 </template>

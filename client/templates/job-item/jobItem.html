@@ -2,6 +2,8 @@
 	<li class="job-item">
 		<h3 class="job-title">{{title}}</h3>
 		<p class="job-description">{{description}}</p>
-		<button class="delete-job-button">&times;</button>
+		{{#if owned}}
+			<button class="delete-job-button">&times;</button>
+		{{/if}}
 	</li>
 </template>

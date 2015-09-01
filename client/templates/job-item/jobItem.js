@@ -1,14 +1,20 @@
-/*Template.jobItem.helpers({
+Template.jobItem.helpers({
 	owned: function() {
-		if ()
+		if (Meteor.userId() === this.owner) {
+			return true;
+		}
 	}
-});*/
+});
 
 
 Template.jobItem.events({
 	"click .delete-job-button": function(e) {
 		e.preventDefault();
 
-		Meteor.call('deleteJob', this._id);
+		if(confirm('Are you sure you want to delete this job?')){
+			Meteor.call('deleteJob', this._id);
+		} else {
+			return false;
+		}
 	}
 });
